@@ -1,0 +1,224 @@
+:root {
+    background-color: #F9FAFC;
+}
+
+@font-face {
+    font-family: Sensation;
+    src: url(./resources/fonts/SansationLight.ttf);
+    font-weight: normal;  
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(./resources/fonts/Inter-SemiBold.ttf);
+    font-weight: normal;  
+}
+
+@font-face {
+    font-family: Inter-regular;
+    src: url(./resources/fonts/Inter-Regular.ttf);
+    font-weight: normal;  
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+    background-color: #3D3D3D;
+}
+
+h1 {
+    color: white;
+    font-family: Sensation;
+}
+
+h2 {
+    font-family:  Inter;
+    color: #111827;
+}
+
+h3 {
+    font-family:  Inter;
+    color: #111827;
+}
+
+p {
+    font-family:  Inter-regular;
+    color: #111827;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.container {
+    position: absolute;
+    right: 100px;
+    left: 100px;
+    bottom: 50px;
+    top: 150px;
+    display: flex;
+}
+.notfound {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: #eaebf0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0px 1px 1px rgba(100, 116, 139, 0.06), 0px 1px 2px rgba(100, 116, 139, 0.1);
+}
+
+.notfound p {
+    color: #abafb3;
+    font-style: italic;
+}
+
+.notfound p:first-child {
+    font-size: 64px;
+}
+
+.hidden {
+    display: none;
+}
+
+.logo {
+    position: absolute;
+    height: auto;
+    overflow: hidden;
+    right: 40px;
+    top: 30px;
+}
+
+.monster {
+    margin: 20px;
+    padding: 20px 40px;
+    flex-grow: 1;
+    background: #FFFFFF;
+
+    box-shadow: 0px 1px 1px rgba(100, 116, 139, 0.06), 0px 1px 2px rgba(100, 116, 139, 0.1);
+    border-radius: 8px;
+    overflow-y: auto;
+}
+
+.monster__name {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.monster__name p {
+    align-self: flex-end;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    font-style: italic;
+    color: #BDBDBD;
+}
+
+.monster__card {
+    display: grid;
+    background-color: #E6E8F0;
+    flex-grow: 0;
+    min-width: 300px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+
+    box-shadow: 0px 1px 1px rgba(100, 116, 139, 0.06), 0px 1px 2px rgba(100, 116, 139, 0.1);
+    border-radius: 8px;
+}
+
+.monster__drops, .monster__spawn {
+    padding: 50px 30px;
+}
+
+.elementalDamage {
+    padding: 0px 20px 0px 60px;
+}
+
+.divider {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    height: 1px;
+
+    background: #E6E8F0
+}
+
+.imgUrl {
+    text-align: center;
+    padding: 50px 00px;
+}
+
+.imgContainer {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: auto;
+}
+
+.stats {
+    padding: 10px 60px;
+}
+
+.grid {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+
+.search__box input[type="size"], .search__box-expanded input[type="size"] {
+    background: rgba(21, 21, 21, 0);
+    border-style: none;
+    outline: none;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-top: 12px;
+    height: 40px;
+    border-bottom: 3px solid #FFFFFF;
+    display: block;
+    width: 100%;
+}
+
+.search__box svg[type="icon"], .search__box-expanded svg[type="icon"] {
+    
+    padding-right: 10px;
+    position: absolute;
+    transform: scale(0.5) translateY(12px);
+    right: 10px;
+    top: 12px;
+}
+
+input[type="size"]::-webkit-search-decoration,
+input[type="size"]::-webkit-search-cancel-button,
+input[type="size"]::-webkit-search-results-button,
+input[type="size"]::-webkit-search-results-decoration { display: none; }
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    box-shadow: 0 0 0 30px #3D3D3D inset !important;
+    -webkit-box-shadow: 0 0 0 30px #3D3D3D inset !important;
+}
+
+input{height:2px; opacity:1;}
+
+input::-webkit-input-placeholder {
+    color: white;
+    opacity: 0.9;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}

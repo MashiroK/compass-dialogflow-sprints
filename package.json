@@ -1,0 +1,13 @@
+{
+  "name": "test-api",
+  "version": "1.0.0",
+  "description": "Uma aplicação executada pelo plugin de docker no heroku, para executar API de monstros do Ragnarok Online",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Jose Ferreira",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
